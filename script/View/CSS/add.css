@@ -1,0 +1,63 @@
+
+
+/* 新規顧客情報入力欄*/
+div.newCustomersList{
+  margin-left: 5em;
+  max-width: 1500px;
+  text-align: left;
+}
+
+/* 新規登録のテーブル */
+table.addTable{
+  /* 線の結合 */
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+/* 項目の名前 */
+th.itemName{
+  border: 1px solid;
+  height: 45px;
+  width: 130px;
+  background-color: #d5eaff;
+}
+
+/* 名前用のデータセル */
+td.nameTd{
+  border: 1px solid;
+  height: 40px;
+  width: 300px;
+}
+
+/* 名前以外のデータセル */
+td.itemTd{
+  margin-right: 1em;
+  border: 1px solid;
+}
+
+/* データの入力 */
+input.inputData{
+	width: 200px;
+}
+
+/* メールアドレスの入力 */
+input.inputEmail{
+	width: 480px;
+}
+
+/* 登録ボタンの位置 */
+div.buttons{
+  margin: 0 auto;
+  max-width: 100px;
+  margin-left: 15em;
+  display: inline;
+}
+
+/* 項目のスペース*/
+span.space{
+  margin-right: 10px;
+}
+/* 一文字分のスペース */
+span.spaceWord{
+  margin-right: 1em;
+}

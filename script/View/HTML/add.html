@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <!-- CSSフォルダのhome.cssを使用する -->
+      <link rel="stylesheet" type="text/css" href="../CSS/add.css">
+
+      <title>顧客管理システム</title>
+  </head>
+
+  <body>
+    <div>
+
+      <!-- タイトル -->
+      <div>
+        <h2>顧客管理システム</h2>
+      </div>
+
+      <!-- 戻るボタン -->
+      <div>
+        <input id="backButton" type="button" value="戻る">
+      </div>
+
+      <br>
+
+      <!-- 新規登録顧客の入力テーブル -->
+      <div class="newCustomersList">
+        新しい顧客情報を入力してください(※がある項目は必須です)
+
+        <form id="addForm" method="post">
+          <table class="addTable">
+
+            <!-- 名前 -->
+            <tr>
+              <th class="itemName">※名前</th>
+              <td class="nameTd">
+                <span class="space"></span>
+                (性)
+                <span class="spaceWord"></span>
+                <input class="inputData" id="inputLastName" type="text" name="lastName"
+                       placeholder="例) 山崎">
+              </td>
+              <td class="nameTd">
+                <span class="space"></span>
+                (名)
+                <span class="spaceWord"></span>
+                <input class="inputData" id="inputFirstName" type="text" name="firstName"
+                       placeholder="例) 良平">
+              </td>
+            </tr>
+
+            <!-- フリガナ -->
+            <tr>
+              <th class="itemName">※フリガナ</th>
+              <td class="nameTd">
+                <span class="space"></span>
+                (セイ)
+                <input class="inputData" id="inptLastKana" type="text" name="lastKana"
+                       placeholder="例) ヤマサキ">
+              </td>
+              <td class="nameTd">
+                <span class="space"></span>
+                (メイ)
+                <input class="inputData" id="inputFirstKana" type="text" name="firstKana"
+                       placeholder="例) リョウヘイ">
+              </td>
+            </tr>
+
+            <!-- メールアドレス -->
+            <tr>
+              <th class="itemName">メールアドレス</th>
+              <td class="" colspan="2">
+                <span class="space"></span>
+                <input class="inputEmail" id="inputEail" type="text" name="email"
+                       placeholder="例) aaaaaaaaaa000@bbbbbb.ccc">
+              </td>
+            </tr>
+
+            <!-- 電話番号 -->
+            <tr>
+              <th class="itemName">電話番号</th>
+              <td class="itemTd" colspan="2">
+              <span class="space"></span>
+                <input class="inputData" id="inputPhone" type="text" name="phone"
+                       maxlength="11" placeholder="例) 0123456789">
+              </td>
+            </tr>
+
+            <!-- 性別 -->
+            <tr>
+              <th class="itemName">※性別</th>
+              <td class="itemTd"  colspan="2">
+                <span class="space"></span>
+                <input type ="radio" name = "gender" value = 1> 男
+                <input type ="radio" name = "gender" value = 2> 女
+              </td>
+
+            <!-- 生年月日 -->
+            <tr>
+              <th class="itemName">※生年月日</th>
+              <td class="itemTd" colspan="2">
+                <span class="space"></span>
+                <input id="inputBirthday" type="date" name="birthday">
+              </td>
+            </tr>
+
+            <!-- 所属会社 -->
+           <tr>
+              <th class="itemName">※所属会社</th>
+              <td class="itemTd" colspan="2">
+                <span class="space"></span>
+                <select id="selectCompany" name="company">
+                  <option value="">選択してください</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+      <br><br>
+
+      <!-- 追加ボタン -->
+      <div class="buttons">
+        <input id="addButton" type="button" value="登録する">
+      </div>
+    </div>
+
+    <!-- jQueryの読み込み -->
+    <script type = "text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../JavaScript/add.js"></script>
+    <script type="text/javascript" src="../JavaScript/companies.js"></script>
+
+  </body>
+</html>

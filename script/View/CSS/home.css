@@ -1,0 +1,143 @@
+.clearfix:after{
+	display:block;
+  height:0;
+	visibility:hidden;
+	clear:both;
+	content:"";
+}
+
+body{
+  margin:-8px;
+  background-color:#223a70;
+}
+
+/* ---------- ヘッダー ------------------------------- */
+ header{
+  width: 100%;
+  height: 80px;
+  background-color: #223a70;
+}
+/* ロゴ */
+#logo{
+  height: 10px;
+  margin: 0;
+  padding: 28px;
+  color: #fff;
+  font-family: 'Yu Mincho';
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid 2px #fff;
+}
+
+.top_contents{
+	margin-top: 170px;
+}
+
+/* スマイル画像 */
+.top_img img{
+  width: 600px;
+  margin: -220px 50px;
+  opacity: 0.5;
+  float: right;
+}
+
+/* 回る四角(白) */
+.load {
+  width: 380px;
+  height: 340px;
+  position: absolute;
+  margin-top: -29px;
+  margin-left: -20px;
+  border: solid 5px #8A0808;
+  -webkit-animation: spin 3.5s linear infinite;
+  -moz-animation: spin 3.5s linear infinite;
+  -ms-animation: spin 3.5s linear infinite;
+  -o-animation: spin 3.5s linear infinite;
+  animation: spin 3.5s linear infinite;
+}
+
+/* 回る四角(赤) */
+.load2 {
+  width: 380px;
+  height: 340px;
+  position: absolute;
+  margin-top: -29px;
+  margin-left: -20px;
+  border: solid 5px #fff;
+  -webkit-animation: spin 6.5s linear infinite;
+  -moz-animation: spin 6.5s linear infinite;
+  -ms-animation: spin 6.5s linear infinite;
+  -o-animation: spin 6.5s linear infinite;
+  animation: spin 6.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  0% {-moz-transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(0deg);}
+  100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+  0% {-o-transform: rotate(0deg);}
+  100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/* 回っていない部分 */
+.top_logo {
+  width: 350px;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+  border: solid 5px #fff;
+}
+/* 文字（顧客管理） */
+h1{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding: 28px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* 文字（SYSTEM） */
+h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 28px;
+  font-size: 70px;
+  font-weight: bold;
+}
+/* ボタン */
+input {
+  display: inline-block;
+  margin-top: 108px;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border: double 3px #fff;
+  border-radius: 3px;
+  transition: .4s;
+  background: none;
+}
+/* カーソルが乗った時の動き */
+input:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+#button{
+	text-align: center;
+}

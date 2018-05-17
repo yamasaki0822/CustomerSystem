@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSSフォルダのlist.cssを使用 -->
+	<link rel="stylesheet" type="text/css" href="../CSS/list.css">
+
+	<title>顧客管理システム</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"><p id="logo">YAMASAKI SYSTEM</p></div>
+    </header>
+
+    <div class="background"></div>
+
+    <div></div>
+    <div class="contents">
+      <!-- ホーム、新規登録ボタン -->
+      <div class="left_menu">
+        <button class="buttons" id="homeButton" type = "button">
+        <font size="2">ホーム</font>
+        </button>
+        <span class="space"></span>
+        <button class="buttons2" id="addButton" type = "button">
+        <font size="2">新規登録</font>
+        </button>
+        <span class="space"></span>
+        <button class="buttons3" id="listButton" type = "button">
+        <font size="2">一覧＆検索</font>
+        </button>
+      </div>
+    <div class="system">
+      <!-- タイトル -->
+      <div class="title">
+        <h2>顧客管理システム</h2>
+      </div>
+
+
+      <br>
+
+      <!-- 検索項目 -->
+      <div class="serchList">
+
+        <!-- タイトル -->
+        <h3>検索</h3>
+
+        <!-- 検索フォーム -->
+        <form id="listForm" method="POST">
+
+          <!-- テーブル名 -->
+          <table class="serchTable">
+
+            <!-- 名前 -->
+            <tr>
+              <th class="serchTh">名前</th>
+              <td class="serchTd">
+                <span class="space"></span>
+                (セイ)
+                <input class="inputName" id="lastNameData" type="text" name="lastName">
+              </td>
+              <td class="serchTd">
+                <span class="space"></span>
+                (メイ)
+                <input class="inputName" id="firstNameData" type="text" name="firstName">
+              </td>
+            </tr>
+
+            <!-- 性別 -->
+            <tr>
+              <th class="serchTh">性別</th>
+              <td class="serchTd" colspan="2">
+                <span class="space"></span>
+                <input type ="radio" name = "gender" value=1> 男
+                <span class="space"></span>
+                <input type ="radio" name = "gender" value=2> 女
+                <span class="space"></span>
+                <input type ="radio" name = "gender" value=0 checked="checked"> 両方
+              </td>
+            </tr>
+
+            <!-- 生年月日 -->
+            <tr>
+              <th class="serchTh">生年月日</th>
+              <td class="serchTd" colspan="2">
+                <span class="space"></span>
+                <input id="startDay" type="date" name="startDay">
+                <span class="space"></span>
+                ～
+                <span class="space"></span>
+                <input id="endDay" type="date" name="endtDay">
+              </td>
+            </tr>
+
+            <!-- 所属会社 -->
+            <tr>
+              <th class="serchTh">所属会社</th>
+              <td class="serchTd" colspan="2">
+                <span class="space"></span>
+                <select id="selectCompany" name="company">
+                  <option value="">選択してください</option>
+                </select>
+              </td>
+            </tr>
+
+          </table>
+
+        </form>
+
+        <!-- 検索ボタン -->
+        <p class="serch">
+          <button class="buttons4" id="serchButton" type = "button">
+            <font size="2">検索</font>
+          </button>
+        </p>
+      </div>
+
+      <br>
+
+      <!-- 顧客一覧 -->
+      <div class="customersList">
+
+        <!-- 顧客テーブル -->
+        <table class="itemTable" id="customersTable">
+
+          <tr>
+            <th class="items" id="customerId">ID</th>
+            <th class="items">
+              <input id="sortIdButton" type="button" value="▲">
+            </th>
+            <th class="items" id="customerName">カナ<br>名前</th>
+            <th class="items">
+              <input id="sortNameButton" type = "button" value="―">
+            </th>
+            <th class="items" id="customerContacts">メールアドレス<br>電話番号</th>
+            <th class="items" id="customerCompany">所属会社</th>
+            <th class="items" id="customerLogs">新規登録日時<br>最終更新日時</th>
+            <th class="items" id="customerButtons"colspan="2">編集</th>
+          </tr>
+        </table>
+      </div>
+
+      <br>
+
+      <!-- ページボタン(前後1ページ) -->
+      <div class="pagers">
+          <input id="pageBack"type="button" value="前へ">
+          <span class="space"></span>
+          <span id="pageNumber">1</span>
+          <span class="space"></span>
+          <input id="pageNext" type="button" value="次へ">
+      </div>
+      <br>
+      <br>
+
+      <!-- ページボタン(特定のページ) -->
+      <div class="pagers">
+          <input id="inputPageNumber" type="text"
+                 placeholder="半角数値を入力してください">
+          <span class="space"></span>
+          <input id="jumpButton" type="button" value="ページへ">
+      </div>
+
+    </div>
+    </div>
+    <!-- jQueryの読み込み -->
+	<script type = "text/javascript"
+	  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+    <!-- JavaScriptフォルダのlist.jsを使用 -->
+	<script type="text/javascript" src="../JavaScript/list.js"></script>
+	<script type="text/javascript" src="../JavaScript/companies.js"></script>
+
+  </body>
+</html>

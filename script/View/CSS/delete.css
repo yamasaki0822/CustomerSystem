@@ -1,0 +1,42 @@
+
+
+/* 削除予定顧客情報 */
+div.deleteList{
+  margin-left: 5em;
+  max-width: 1500px;
+  text-align: left;
+}
+
+/* 削除テーブル */
+table.deleteTable{
+  /* 線の結合 */
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+/* 項目名 */
+th.itemName{
+  border: 1px solid;
+  height: 45px;
+  width: 130px;
+  background-color: #d5eaff;
+}
+
+td.itemData{
+  border: 1px solid;
+  height: 40px;
+  width: 250px;
+}
+
+/* 項目のスペース*/
+span.space{
+  margin-right: 10px;
+}
+
+
+div.butttons{
+  margin: 0 auto;
+  max-width: 100px;
+  margin-left: 15em;
+  display: inline;
+}

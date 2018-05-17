@@ -1,0 +1,313 @@
+/*
+	classで判別
+	html p class="クラス名"
+	css  p.クラス名
+
+	IDで判別できる
+	html p id="ID名"
+	css  p#ID名
+*/
+
+/* 画面タイトル */
+div.title{
+  /*線の表示*/
+  /*border:#ff0000 solid 1px;*/
+  text-align: left;
+  width: 200px;
+}
+
+
+/* 項目のスペース*/
+span.space{
+  margin-right: 10px;
+}
+
+/* --- 検索 -- ----------------------------------------- */
+/* 検索リスト全体 */
+div.serchList{
+  margin-left: 2em;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+/* テーブル*/
+table.serchTable{
+  border-collapse: collapse;
+  border: 1px solid;
+}
+/* 項目 */
+th.serchTh{
+  width: 120px;
+  height: 60px;
+  color: #fff;
+  padding-left: 10px;
+  border-left: solid 5px #B40404;
+  border-bottom: solid 1px #eee;
+  background-color: #223a70;
+}
+/* 検索条件 */
+td.serchTd{
+  margin-right: 1em;
+  width: 220px;
+  height: 40px;
+  border: 1px solid;
+  background: #fff;
+}
+/* 名前入力 */
+input.inputName{
+  width: 150px;
+}
+
+/* 検索ボタン*/
+p.serch{
+  text-align: center;
+  margin-right: 35px;
+}
+/* ----------------------------------------------------- */
+
+
+/* --- 顧客一覧 ---------------------------------------- */
+ /* 顧客リスト全体 */
+div.customersList{
+  margin-left: 5em;
+}
+/* テーブル */
+table.itemTable{
+  /* 線の結合 */
+  margin-right: 32px;
+  border-collapse: collapse;
+  border: 1px solid;
+  rules: all;
+}
+/* 項目名 */
+th.items{
+  border: 1px solid #eee;
+  background-color: #223a70;
+  color: #fff;
+}
+/* ID */
+th#customerId{
+  width: 40px;
+}
+/* カナ、名前 */
+th#customerName{
+  width: 150px;
+}
+/* メールアドレス、電話番号 */
+th#customerContacts{
+  width: 300px;
+}
+/* 所属会社 */
+th#customerCompany{
+  width: 300px;
+}
+/* 新規登録日時、最終登録日時 */
+th#customerLogs{
+  width: 200px;
+}
+/* 編集 */
+th#customerButtons{
+  width: 100px;
+}
+
+
+/* ID */
+td.id{
+  border: 1px solid;
+  text-align: right;
+}
+/* 名前 */
+td.names{
+  border: 1px solid;
+}
+/* メールアドレス、電話番号 */
+td.contacts{
+  border: 1px solid;
+  text-align: right;
+}
+/*  */
+td.company{
+  border: 1px solid;
+  text-align: left;
+}
+/*  */
+td.logs{
+  border: 1px solid;
+  text-align: right;
+}
+/*  */
+td.edit{
+	border: 1px solid;
+	text-align: center;
+	width: 70px;
+}
+/*  */
+td.delete{
+	border: 1px solid;
+	text-align: center;
+	width: 70px;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- ページャー ------------------------------- */
+/* ページボタン */
+div.pagers{
+  margin: 0 auto;
+  max-width: 100px;
+  margin-left: 36.4em;
+  display: inline;
+}
+
+/* ページの数値入力 */
+input#inputPageNumber{
+  width: 180px;
+  height: 30px;
+}
+/* ----------------------------------------------------- */
+
+
+body{
+  margin: -8px;
+}
+
+.contents{
+  top: 72px;
+  position: absolute;
+}
+
+/* 背景画像 */
+.background{
+  min-width: 1230px;
+  min-height: 877px;
+  height: 1300px;
+  /*height: 100%;*/
+  position: relative;
+  bottom: 0;
+  opacity: 0.2;
+  background: url('../images/bg.jpeg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+
+/* ---------- ヘッダー ------------------------------- */
+header{
+  width: 100%;
+  height: 80px;
+  background-color: #223a70;
+}
+/* ロゴ */
+#logo{
+  height: 10px;
+  margin: 0;
+  padding: 28px;
+  color: #fff;
+  font-family: 'Yu Mincho';
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid 2px #fff;
+}
+
+/* タイトル */
+.title{
+  width: 192px;
+  height: 30px;
+  padding-left: 10px;
+  margin: 25px;
+  border-left: solid 10px #B40404;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- 左メニュー ------------------------------- */
+.left_menu{
+  width: 200px;
+  /*height: 885px;*/
+  height: 100%;
+  position: absolute;
+  background: #223a70;
+}
+
+.buttons{
+  width: 170px;
+  height: 35px;
+  margin: 10px 0 0 17px;
+  color: #223a70;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+  background: #fff;
+}
+
+.buttons2{
+  width: 170px;
+  height: 35px;
+  margin: 20px 0 0 7px;
+  color: #223a70;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+  background: #fff;
+}
+
+.buttons3{
+  width: 170px;
+  height: 35px;
+  margin: 20px 0 0 7px;
+  color: #223a70;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+  background: #fff;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- 検索ボタンデザイン ------------------------------- */
+.buttons4{
+  width: 170px;
+  height: 35px;
+  margin: 20px 0 0 35px;
+  color: #fff;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+  background: #223a70;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- システム部分 ------------------------------- */
+.system{
+  position: relative;
+  left: 30%;
+  margin-top: 120px;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- 戻るボタン ------------------------------- */
+#pageBack{
+  background: #223a70;
+  color: #fff;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- 次へボタン ------------------------------- */
+#pageNext{
+  background: #223a70;
+  color: #fff;
+}
+/* ----------------------------------------------------- */
+
+
+/* ---------- 次へボタン ------------------------------- */
+#jumpButton{
+  color:#fff;
+  background: #223a70;
+}

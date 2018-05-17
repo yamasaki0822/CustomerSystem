@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <!-- CSSフォルダのhome.cssを使用する -->
+      <link rel="stylesheet" type="text/css" href="../CSS/delete.css">
+
+      <title>顧客管理システム</title>
+  </head>
+
+  <body>
+    <div>
+
+      <!-- タイトル -->
+      <div>
+        <h2>顧客管理システム</h2>
+      </div>
+
+      <!-- 戻るボタン -->
+      <div>
+        <input id="backButton" type="button" value="戻る">
+      </div>
+
+      <br>
+
+      <!-- 顧客の削除テーブル -->
+      <div class="deleteList">
+      この顧客を削除しますか？
+
+      <form id="deleteForm" action="" method="post">
+        <table class="deleteTable">
+
+          <!-- 名前 -->
+          <tr>
+            <th class="itemName">名前</th>
+            <td class="itemData">
+              <span class="space"></span>
+              (性)
+              <span id="deleteLastName"></span>
+            </td>
+            <td class="itemData">
+              <span class="space"></span>
+              (名)
+              <span id="deleteFirstName"></span>
+            </td>
+          </tr>
+
+          <!-- フリガナ -->
+          <tr>
+            <th class="itemName">フリガナ</th>
+            <td class="itemData">
+              <span class="space"></span>
+              (セイ)
+              <span id="deleteLastKana"></span>
+            </td>
+            <td class="itemData">
+              <span class="space"></span>
+              (メイ)
+              <span id="deleteFirstKana"></span>
+            </td>
+          </tr>
+
+          <!-- メールアドレス -->
+          <tr>
+            <th class="itemName">メールアドレス</th>
+            <td class="itemData" colspan="2">
+              <span class="space"></span>
+              <span id="deleteEmail"></span>
+            </td>
+          </tr>
+
+          <!-- 電話番号 -->
+          <tr>
+            <th class="itemName">電話番号</th>
+            <td class="itemData" colspan="2">
+              <span class="space"></span>
+              <span id="deletePhone"></span>
+            </td>
+          </tr>
+
+          <!-- 性別 -->
+          <tr>
+            <th class="itemName">性別</th>
+            <td class="itemData"colspan="2">
+              <span class="space"></span>
+             <span id="deleteGender"></span>
+           </td>
+
+            <!-- 生年月日 -->
+          <tr>
+            <th class="itemName">生年月日</th>
+            <td class="itemData" colspan="2">
+              <span class="space"></span>
+              <span id="deleteBirthday"></span>
+            </td>
+          </tr>
+
+          <!-- 所属会社 -->
+          <tr>
+            <th class="itemName">所属会社</th>
+            <td class="itemData" colspan="2">
+              <span class="space"></span>
+              <span id="deleteCompany"></span>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <br><br>
+      </div>
+
+      <!-- 削除ボタン -->
+      <div class="butttons">
+        <input id="deleteButton" type="button" value="削除する">
+      </div>
+    </div>
+
+    <!-- jQueryの読み込み -->
+    <script type = "text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../JavaScript/delete.js"></script>
+
+  </body>
+</html>
