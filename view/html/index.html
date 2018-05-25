@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Designer Works（仮）</title>
+    <meta charset="utf-8" />
+    <!------css------>
+    <link href="../css/top.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+
+    <!--slick用-->
+    <link href="../js/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="../js/slick/slick.css" rel="stylesheet" type="text/css"/>
+
+
+  </head>
+
+  <body>
+    <!--------ヘッダー------->
+    <header>
+      <h1><a href="index.html">Designer Works</a></h1>
+      <nav class="login">
+        <ul>
+          <li><a href="designerindex.html">制作者一覧</a></li>
+          <li id="loginlink"><a href="login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+      <!--<nav class="mypage">
+        <ul>
+          <li><a href="designerindex.html">制作者一覧</a></li>
+          <li id="mypagelink"><a href="mypage.html">MYPAGE</a></li>
+        </ul>
+      </nav>-->
+    </header>
+
+    <div id="wrap">
+
+    <section id="Top">
+      <!------トップスライダー----->
+      <div class="slider-wrapper">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+      </div>
+    </section>
+    <!------ソート機能------->
+    <section id="SearchBox">
+    <form id="SearchAndFilter">
+      <ul id="SearchBoxSort">
+        <li id="SearchAll" value="1"><label for="all">ALL</label><input type="radio" name="sort" value="id" id="all" checked="checked" onchange="searchCategory();"></li>
+        <li id="SearchUpDeat" value="2"><label for="date">UP DATE</label><input type="radio" name="sort" value="uploaded_at" id="date" onchange="searchCategory();"></li>
+        <li id="SeartReview" value="3"><label for="review">REVIEW</label><input type="radio" name="sort" value="average_point" id="review" onchange="searchCategory();"></li>
+      </ul>
+
+      <!-----フィルタ検索機能------>
+      <div class="SearchBoxfilter">
+      </div>
+    </form>
+    </section>
+
+
+     <!------ライトボックス----->
+    <div class="lightbox_view">
+      <div class="usernamebox">
+        <div class="iconbox"></div>
+        <div class="textbox">
+          <span>作品タイトル</span>
+          <p>なまえなまえ</p>
+        </div>
+      </div>
+
+          <div class="leftcontents">
+            <div class="imgbox"></div>
+          </div>
+
+          <div class="rightcontents">
+            <div class="close">
+              <a href="#" onclick="closeLightbox();"><img src="../images/top/batuicon.png" alt=""/></a>
+            </div>
+            <div class="star">
+              <input id="star1" type="radio" name="star" value="5" />
+              <label for="star1">★</label>
+              <input id="star2" type="radio" name="star" value="4" />
+              <label for="star2">★</label>
+              <input id="star3" type="radio" name="star" value="3" />
+              <label for="star3">★</label>
+              <input id="star4" type="radio" name="star" value="2" />
+              <label for="star4">★</label>
+              <input id="star5" type="radio" name="star" value="1" />
+              <label for="star5">★</label>
+            </div>
+            <p>評価コメント</p>
+            <div class="commentbox">
+            </div>
+            <form id="sendeva">
+            <div class="idmem"></div>
+              <p>作品評価</p>
+              <div class="starbutton">
+                <input id="starbutton1" type="radio" name="star" value="5" />
+                <label for="starbutton1">★</label>
+                <input id="starbutton2" type="radio" name="star" value="4" />
+                <label for="starbutton2">★</label>
+                <input id="starbutton3" type="radio" name="star" value="3" />
+                <label for="starbutton3">★</label>
+                <input id="starbutton4" type="radio" name="star" value="2" />
+                <label for="starbutton4">★</label>
+                <input id="starbutton5" type="radio" name="star" value="1" />
+                <label for="starbutton5">★</label>
+                <input id="starbutton6" type="radio" name="star" value="0" checked="checked" />
+              </div>
+              <div class="reviewbox">
+                <textarea name="kanso" rows="4" cols="40">作品にコメントする</textarea>
+                <p><input type="button" value="投稿" class="review" onclick="sendEvaluation();"></p>
+              </div>
+
+            </form>
+          </div>
+    </div>
+
+
+    <div id="wrapper" class="clearfix">
+      <div class="masonry" id="thumbnail">
+      </div>
+    </div>
+
+    </div>
+    <footer class="clearfix">
+      <h1>Designer Works</h1>
+      <nav>
+      <ul>
+        <li><a>お問い合わせ</a></li>
+        <li><a>プライバシーポリシー</a></li>
+      </ul>
+      </nav>
+      <p>copyright©2018.system</p>
+      <div id="pagetopbutton">
+      <div>
+        <a href="#">
+          <img src="../images/top/pagetop.jpg" alt="ページトップボタン"/>
+        </a>
+      </div>
+    </div>
+    </footer>
+
+<!------js------->
+<script src="../js/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="../js/style.js" type="text/javascript"></script>
+<script src="../js/slick/slick.min.js" type="text/javascript"></script>
+<!--masonry用-->
+<script src="../js/masonry/masonry.pkgd.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+
+  </body>
+
+
+</html>

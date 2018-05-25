@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------
+	1. document
+--------------------------------------------------*/
+
+body {
+  text-align: justify;
+  font-size: 14px;
+  font-family: "メイリオ", sans-serif;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*--------------------------------------------------
+	2. header
+--------------------------------------------------*/
+
+header {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  min-width: 1250px;
+  height: 75px;
+  background: #000;
+}
+
+header h1 {
+  float: left;
+  width: 300px;
+  padding: 25px 0 25px 50px;
+}
+
+header h1 a {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav.login {
+  float: right;
+  width: 280px;
+  margin: 0 50px;
+}
+
+header nav.mypage {
+  float: right;
+  width: 280px;
+  min-width: 960px;
+  margin: 0 50px;
+  display: none;
+}
+
+header ul {
+  width: 280px;
+  list-style: none;
+}
+
+header li {
+  float: left;
+  width: 140px;
+  height: 75px;
+  text-align: center;
+}
+
+header li:hover {
+  background: rgba(204,204,204,0.5);
+}
+
+header li a {
+  display: block;
+  margin: 30px 0;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------
+	3. main
+--------------------------------------------------*/
+#contentsbox {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#LeftBox {
+  float: left;
+  width: 260px;
+}
+
+#LeftBox h1 {
+  margin: 60px 0;
+  font-size: 36px;
+}
+
+#LeftBox h2 {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+}
+
+#LeftBox .creatoricon {
+  width: 137px;
+  height: 137px;
+  margin: 10px 10px 0 10px;
+  background: #000;
+}
+
+#LeftBox .file_edit {
+  width: 110px;
+  margin: 0 0 10px 30px;
+}
+
+#LeftBox .usernamebox {
+  width: 120px;
+  float: left;
+}
+
+#LeftBox span {
+  font-size: 12px;
+  margin: 10px;
+}
+
+#LeftBox p {
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
+#LeftBox p.editbox {
+  width: 50px;
+  float: left;
+  margin: 17px 0 0 0;
+}
+
+.editbox input {
+  width: 50px;
+  height: 25px;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+#LeftBox .buttonbox {
+  float: left;
+  width: 250px;
+  margin: 40px 0;
+}
+
+#LeftBox .buttonbox p {
+  float: left;
+  width: 100px;
+}
+
+.buttonbox input {
+  width: 112px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  border: 1px solid #ccc;
+}
+
+#RightBox {
+ float: left;
+ width: 742px;
+ height: 852px;
+ margin: 0 0 0 97px;
+ background: #ccc;
+ overflow-y: auto;
+}
+
+#RightBox::-webkit-scrollbar {
+  display: none;
+}
+
+#RightBox .rightcontents {
+  width: 722px;
+  margin: 140px auto 0;
+}
+
+#RightBox span {
+  float: left;
+  margin: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#RightBox p.addbutton {
+  float: right;
+  margin: 0 10px;
+}
+
+.addbutton input {
+  width: 112px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+#RightBox .myistbox {
+  float: left;
+  width: 722px;
+  margin: 20px auto 60px;
+}
+
+.myistbox ul {
+  list-style: none;
+}
+
+.myistbox ul li {
+  float: left;
+  width: 125px;
+  height: 168px;
+  margin: 0 9px 30px 10px;
+}
+
+.myistbox li .imgbox {
+  width: 125px;
+  height: 125px;
+  background: #000;
+}
+
+.myistbox .textbox {
+  margin: 5px 0 0 0;
+}
+
+.myistbox .textbox p.category {
+  font-size: 12px;
+}
+
+div.creatoricon {
+  width   : 150px;
+  height  : 150px;
+  float   : left;
+  overflow: hidden;
+  border  : 1px solid #eee;
+}
+
+.creatoricon img {
+  position : relative;
+}
+
+/*;;;;;;;;;;ライトボックス;;;;;;;;;*/
+
+.lightbox_view {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -450px;
+  z-index: 1;
+  width: 900px;
+  height: 600px;
+  background: #fff;
+  border: 2px solid #99ccff;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #99ccff;
+}
+
+.close img {
+  width: 15px;
+  margin: 8px;
+}
+
+.lightbox_view .leftcontents {
+  float: left;
+  width: 400px;
+  margin: 50px 60px 0 50px;
+}
+
+.lightbox_view .imgbox {
+  width: 350px;
+  height: 458px;
+  margin: 0 auto;
+  background: #000;
+}
+
+.lightbox_view .leftcontents p {
+  width: 120px;
+  margin: 10px 0 0 266px;
+}
+
+.lightbox_view .leftcontents p input {
+  width: 110px;
+}
+
+.lightbox_view .rightcontents {
+  width: 300px;
+  float: left;
+  margin: 50px 50px 0 0;
+}
+
+.lightbox_view .rightcontents p.title {
+  margin: 110px 0 20px 0;
+}
+
+.lightbox_view .rightcontents input {
+  margin: 0 0 0 30px;
+  height: 18px;
+}
+
+
+.lightbox_view select {
+  width: 174px;
+  height: 22px;
+  margin: 0 0 0 24px;
+}
+
+.lightbox_view .buttonbox {
+  width: 300px;
+  margin: 239px auto 0;
+}
+
+.lightbox_view .buttonbox p {
+  float: left;
+}
+
+.lightbox_view .buttonbox input {
+  height: 38px;
+}
+
+/*--------------------------------------------------
+	4. footer
+--------------------------------------------------*/
+
+footer {
+  position: relative;
+  width: 100%;
+  min-width: 1250px;
+  height: 70px;
+  background: #000;
+}
+
+footer h1 {
+  float: left;
+  width: 280px;
+  padding: 25px 0 25px 50px;
+  font-size: 24px;
+  color: #fff;
+}
+
+footer nav {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 23%;
+  width: 280px;
+  padding: 30px 25px;
+
+}
+
+footer nav ul {
+  width: 800px;
+  margin: 0 auto;
+}
+
+footer li {
+  float: left;
+  width: 140px;
+  text-align: center;
+  list-style: none;
+}
+
+footer li a {
+  font-size: 12px;
+  font-family: "メイリオ";
+  color: #fff;
+}
+
+footer p {
+  float: right;
+  width: 205px;
+  margin-right: 36px;
+  padding: 25px;
+  color: #fff;
+}

@@ -1,0 +1,48 @@
+
+.clearfix:after{
+  content:" ";
+  display:block;
+  clear:both;
+}
+
+body.overflow{
+	overflow: hidden;
+}
+
+.main_gallery{
+	position   : relative;
+	width:     : 100%;
+	min-height : 900px;
+}
+
+.lightbox_view{
+	display: none;
+}
+
+.lightbox_view_img{
+	display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightbox_img_content{
+	position: absolute;
+    top: 51%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -275px;
+}
+
+
+
+.close_btn{
+	position: absolute;
+
+    right: -40px;
+    cursor: pointer;
+}

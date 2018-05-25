@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Designer Works（仮）</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/edit.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Designer Works</a></h1>
+      <nav class="login">
+        <ul>
+          <li><a>制作者一覧</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+      <nav class="mypage">
+        <ul>
+          <li><a>制作者一覧</a></li>
+          <li><a>MYPAGE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrap">
+      <div id="Edit">
+        <h1>Add New</h1>
+        <form id="send" name="edit" method="POST" enctype="multipart/form-data">
+        <div class="editbox">
+          <div class="box1">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text1" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img1" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box2">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text2" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img2" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box3">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text3" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img3" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box4">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text4" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img4" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box5">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text5" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img5" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box6">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text6" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img6" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box7">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text7" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img7" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <div class="box8">
+            <div class="img-box"><img v-show="uploadedImage" :src="uploadedImage" /></div>
+            <p><input type="text" placeholder="タイトルを入力" class="text8" name="title"></p>
+            <select name="category">
+              <option value="キャラ">キャラ</option>
+              <option value="背景">背景</option>
+              <option value="アイテム">アイテム</option>
+            </select>
+            <p><input type="file" name="img8" value="追加" class="imgbutton" v-on:change="onFileChange"></p>
+            <p><input type="button" value="削除" class="delete" onclick="deleteIllust();"></p>
+          </div>
+          <p class="button"><input type="button" value="作品登録" class="button" onclick="inputUpdateButton();"></p>
+        </div>
+      </form>
+     </div>
+    </div>
+
+    <footer>
+      <h1>Designer Works</h1>
+      <nav>
+      <ul>
+        <li><a>お問い合わせ</a></li>
+        <li><a>プライバシーポリシー</a></li>
+      </ul>
+      </nav>
+      <p>copyright©2018.system</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../js/edit.js"></script>
+  </body>
+</html>

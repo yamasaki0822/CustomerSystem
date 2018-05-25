@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------
+	1. document
+--------------------------------------------------*/
+
+body {
+  text-align: justify;
+  font-size: 14px;
+  font-family: "メイリオ", sans-serif;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+#wrap {
+  width: 1160px;
+  margin:0 auto;
+}
+
+/*--------------------------------------------------
+	2. header
+--------------------------------------------------*/
+
+header {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  height: 75px;
+  background: #000;
+}
+
+header h1 {
+  float: left;
+  width: 300px;
+  padding: 25px 0 25px 50px;
+}
+
+header h1 a {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav.login {
+  float: right;
+  width: 280px;
+  margin: 0 50px;
+}
+
+header nav.mypage {
+  float: right;
+  width: 280px;
+  margin: 0 50px;
+  display: none;
+}
+
+header li {
+  float: left;
+  width: 140px;
+  height: 75px;
+  text-align: center;
+  list-style: none;
+}
+
+header li:hover {
+  background: rgba(204,204,204,0.5);
+}
+
+header li a {
+  display: block;
+  margin: 30px 0;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------
+	3. main
+--------------------------------------------------*/
+#contentabox {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+#contentsbox h1 {
+  font-size: 14px;
+  margin: 21px 0 0 13px;
+}
+
+.creatersortbox {
+  width: 1160px;
+  height: 22px;
+  padding: 7px 0 15px 0;
+}
+
+.creatersortbox ul {
+  float: right;
+  list-style: none;
+}
+
+.creatersortbox ul li {
+  float: left;
+  width: 70px;
+  height: 22px;
+  text-align: center;
+  border-left: 1px solid #000;
+}
+
+#SortOther {
+  border-right: 1px solid #000;
+}
+
+.creatersortbox li span {
+  font-size: 10px;
+  color: #333333;
+}
+
+.listbox {
+  min-width: 960px;
+  height: 580px;
+  margin: 0 0 150px 0;
+}
+
+.listbox ul {
+  width: 1150px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.listbox ul li {
+  float: left;
+  width: 115px;
+  height: 125px;
+  padding-bottom: 20px;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+}
+
+.listbox ul li div {
+  font-size: 12px;
+}
+
+
+img {
+  width: 105px;
+  border: 1px solid #ccc;
+}
+/*--------------------------------------------------
+	4. footer
+--------------------------------------------------*/
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #000;
+}
+
+footer h1 {
+  float: left;
+  width: 280px;
+  padding: 25px 0 25px 50px;
+  font-size: 24px;
+  color: #fff;
+}
+
+footer nav {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 23%;
+  width: 280px;
+  padding: 30px 25px;
+  
+}
+
+footer nav ul {
+  width: 800px;
+  margin: 0 auto;
+}
+
+footer li {
+  float: left;
+  width: 140px;
+  text-align: center;
+  list-style: none;
+}
+
+footer li a {
+  font-size: 12px;
+  font-family: "メイリオ";
+  color: #fff;
+}
+
+footer p {
+  float: right;
+  width: 205px;
+  margin-right: 36px;
+  padding: 25px;
+  color: #fff;
+}

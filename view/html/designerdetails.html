@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Designer Works（仮）</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/designerdetails.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1><a href="index.html">Designer Works</a></h1>
+      <nav class="login">
+        <ul>
+          <li><a href="designerindex.html">制作者一覧</a></li>
+          <li id="loginlink"><a href="login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+      <nav class="mypage">
+        <ul>
+          <li><a href="designerindex.html">制作者一覧</a></li>
+          <li><a href="mypage.html">MYPAGE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+      <div class="creatorbox">
+        <div class="creatoricon">
+          <!--<img src="../images/creator/1.jpg" alt=""/>-->
+        </div>
+        <div class="creatorname">
+          <span>Pen Name</span>
+          <p>なまえなまえ</p>
+        </div>
+        <p class="return"><a href="designerindex.html">制作者一覧へ戻る</a></p>
+      </div>
+
+      <!------ソート機能------->
+      <section id="SearchBox">
+        <form id="SearchAndFilter">
+          <ul id="SearchBoxSort">
+          <li id="SearchAll" value="1"><label for="all">ALL</label><input type="radio" name="sort" value="id" id="all" checked="checked" onchange="searchCategory();"></li>
+          <li id="SearchUpDeat" value="2"><label for="date">UP DATE</label><input type="radio" name="sort" value="uploaded_at" id="date" onchange="searchCategory();"></li>
+          <li id="SeartReview" value="3"><label for="review">REVIEW</label><input type="radio" name="sort" value="average_point" id="review" onchange="searchCategory();"></li>
+          </ul>
+
+          <!-----フィルタ検索機能------>
+          <div class="SearchBoxfilter">
+          </div>
+        </form>
+      </section>
+
+
+
+     <!--<div id="wrap">-->
+      <div class="creatoristbox clearfix">
+        <ul>
+          <!--<li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="../images/top/kawaii.jpg" alt=""/>
+          </li>-->
+        </ul>
+      </div>
+<!--    </div>-->
+
+<!------ライトボックス----->
+    <!--<div class="lightbox_view">
+      <div class="usernamebox">
+        <div class="iconbox"></div>
+        <div class="textbox">
+          <span>作品タイトル</span>
+          <p>なまえなまえ</p>
+        </div>
+      </div>
+
+          <div class="leftcontents">
+          <div class="imgbox"></div>
+          </div>
+
+          <div class="rightcontents">
+            <div class="close">
+              <img src="../images/top/batuicon.png" alt=""/>
+            </div>
+            <div class="star">
+              <input id="star1" type="radio" name="star" value="5" />
+              <label for="star1">★</label>
+              <input id="star2" type="radio" name="star" value="4" />
+              <label for="star2">★</label>
+              <input id="star3" type="radio" name="star" value="3" />
+              <label for="star3">★</label>
+              <input id="star4" type="radio" name="star" value="2" />
+              <label for="star4">★</label>
+              <input id="star5" type="radio" name="star" value="1" />
+              <label for="star5">★</label>
+            </div>
+            <p>評価コメント</p>
+            <div class="commentbox">
+              <dl>
+                <dt>18/05/08</dt>
+                <dd>とても素敵です。</dd>
+              </dl>
+              <dl>
+                <dt>18/05/08</dt>
+                <dd>とても素敵です。</dd>
+              </dl>
+              <dl>
+                <dt>18/05/08</dt>
+                <dd>とても素敵です。</dd>
+              </dl>
+              <dl>
+                <dt>18/05/07</dt>
+                <dd>とても素敵です。</dd>
+              </dl>
+              <dl>
+                <dt>18/05/06</dt>
+                <dd>とても素敵です。</dd>
+              </dl>
+            </div>
+            <form method="post" action="example.cgi">
+              <p>作品評価</p>
+              <div class="starbutton">
+                <input id="starbutton1" type="radio" name="star" value="5" />
+                <label for="starbutton1">★</label>
+                <input id="starbutton2" type="radio" name="star" value="4" />
+                <label for="starbutton2">★</label>
+                <input id="starbutton3" type="radio" name="star" value="3" />
+                <label for="starbutton3">★</label>
+                <input id="starbutton4" type="radio" name="star" value="2" />
+                <label for="starbutton4">★</label>
+                <input id="starbutton5" type="radio" name="star" value="1" />
+                <label for="starbutton5">★</label>
+              </div>
+              <div class="reviewbox">
+                <textarea name="kanso" rows="4" cols="40">作品にコメントする</textarea>
+                <p><input type="submit" value="投稿" class="review"></p>
+              </div>
+
+            </form>
+          </div>
+    </div>-->
+
+
+
+
+
+
+
+
+
+    <footer>
+      <h1>Designer Works</h1>
+      <nav>
+      <ul>
+        <li><a>お問い合わせ</a></li>
+        <li><a>プライバシーポリシー</a></li>
+      </ul>
+      </nav>
+      <p>copyright©2018.system</p>
+    </footer>
+    <!--js-->
+    <script src="../js/jquery-3.3.1.js" type="text/javascript"></script>
+	<script src="../js/style.js" type="text/javascript"></script>
+	<script src="../js/slick/slick.min.js" type="text/javascript"></script>
+	<!--masonry用-->
+	<script src="../js/masonry/masonry.pkgd.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/designerdetails.js"></script>
+	<!--<script type="text/javascript" src="../js/lightbox.js"></script>-->
+  </body>
+</html>

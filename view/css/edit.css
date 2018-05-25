@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------
+	1. document
+--------------------------------------------------*/
+
+body {
+  text-align: justify;
+  font-size: 14px;
+  font-family: "メイリオ", sans-serif;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+#wrap {
+  width: 1200px;
+  margin:0 auto;
+}
+
+/*--------------------------------------------------
+	2. header
+--------------------------------------------------*/
+
+header {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  height: 75px;
+  background: #000;
+}
+
+header h1 {
+  float: left;
+  width: 300px;
+  padding: 25px 0 25px 50px;
+}
+
+header h1 a {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav.login {
+  float: right;
+  width: 280px;
+  margin: 0 50px;
+}
+
+header nav.mypage {
+  float: right;
+  width: 280px;
+  margin: 0 50px;
+  display: none;
+}
+
+header li {
+  float: left;
+  width: 140px;
+  height: 75px;
+  text-align: center;
+  list-style: none;
+}
+
+header li:hover {
+  background: rgba(204,204,204,0.5);
+}
+
+header li a {
+  display: block;
+  margin: 30px 0;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------
+	3. main
+--------------------------------------------------*/
+#Edit {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#Edit h1 {
+  margin: 60px 0;
+  font-size: 36px;
+}
+
+form p {
+  float: left;
+}
+
+.editbox {
+  width: 1100px;
+  height: 764px;
+  margin: 0 auto;
+}
+
+.box1 ,.box2 ,.box3 ,.box4{
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin: 0 46px 7px 0;
+}
+
+.box4 ,.box4 .img-box {
+  margin: 0;
+}
+
+
+.box5 ,.box6 ,.box7 ,.box8 {
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin: 25px 46px 0 0;
+}
+
+.box8 ,.box8 .img-box {
+  margin: 25px 0 0 0;
+}
+
+.box1 .img-box ,.box2 .img-box ,.box3 .img-box ,.box4 .img-box
+,.box5 .img-box ,.box6 .img-box ,.box7 .img-box ,.box8 .img-box {
+  float: left;
+  width: 240px;
+  height: 240px;
+  background: #000;
+}
+
+.box1 .img-box ,.box2 .img-box ,.box3 .img-box ,.box4 .img-box
+,.box5 .img-box ,.box6 .img-box ,.box7 .img-box ,.box8 .img-box {
+  margin: 0 46px 0 0;
+}
+
+.text1 ,.text2 ,.text3 ,.text4 ,.text5
+,.text6 ,.text7 ,.text8 {
+  width: 236px;
+  height: 20px;
+}
+
+div.img-box {
+  width   : 250px;
+  height  : 250px;
+  float   : left;
+  overflow: hidden;
+  border  : 1px solid #eee;
+}
+
+.img-box img {
+  position : relative;
+}
+
+select {
+  float: left;
+  width: 122px;
+  height: 23px;
+  margin: 5px 5px 0 2px;
+}
+
+input.imgbutton {
+  float: left;
+  width: 50px;
+  height: 23px;
+  margin: 5px 5px 0 2px;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+input.delete {
+  width: 50px;
+  height: 23px;
+  margin: 5px 0;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+form p.button {
+  width: 1100px;
+  margin: 30px 0;
+  text-align: center;
+}
+input.button {
+  width: 150px;
+  height: 45px;
+  background: #000;
+  color: #fff;
+}
+/*--------------------------------------------------
+	4. footer
+--------------------------------------------------*/
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #000;
+}
+
+footer h1 {
+  float: left;
+  width: 280px;
+  padding: 25px 0 25px 50px;
+  font-size: 24px;
+  color: #fff;
+}
+
+footer nav {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 23%;
+  width: 280px;
+  padding: 30px 25px;
+
+}
+
+footer nav ul {
+  width: 800px;
+  margin: 0 auto;
+}
+
+footer li {
+  float: left;
+  width: 140px;
+  text-align: center;
+  list-style: none;
+}
+
+footer li a {
+  font-size: 12px;
+  font-family: "メイリオ";
+  color: #fff;
+}
+
+footer p {
+  float: right;
+  width: 205px;
+  margin-right: 36px;
+  padding: 25px;
+  color: #fff;
+}
